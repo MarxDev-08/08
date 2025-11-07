@@ -1,0 +1,98 @@
+.page-bg {
+  background: #F0F0F0;
+  padding: 14px;
+}
+
+/* The white rounded bar */
+.nav-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 44px;
+  height: 85px;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Left section: logo + wordmark */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px; /* keeps center truly centered */
+}
+
+.nav-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.nav-brand {
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+  color: #0b0b0b;
+}
+
+/* Center links */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: #0b0b0b;
+  font-weight: 500;
+  line-height: 1;
+  padding: 6px 0;
+  transition: color .15s ease;
+}
+
+.nav-center a:hover {
+  color: #4b5563;
+}
+
+/* active underline like the screenshot */
+.nav-center a.active {
+  border-bottom: 2px solid #0b0b0b;
+}
+
+/* Right section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 200px;
+  justify-content: flex-end;
+}
+
+.cta {
+  background: #0E5B73;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity .15s ease;
+}
+
+.cta:hover {
+  opacity: .9;
+}
+
+/* Responsive: hide center links on small screens (like the reference site) */
+@media (max-width: 900px) {
+  .nav-center { display: none; }
+  .nav-shell { height: 64px; padding: 0 18px; }
+  .page-bg { padding: 10px; }
+}
