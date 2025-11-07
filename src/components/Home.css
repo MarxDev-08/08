@@ -79,13 +79,19 @@
   object-fit: cover;
 }
 
-/* White-to-transparent gradient that sits over the image on the left side */
 .hero-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 28%);
+  background: linear-gradient(
+    175deg,
+    rgba(14, 91, 115, 0.5) 0%,   /* brand color with opacity */
+    rgba(14, 91, 115, 0.2) 25%,  /* lighter fade */
+    rgba(255, 255, 255, 0) 60%   /* fades to transparent */
+  );
   pointer-events: none;
 }
+
+
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1100px) {

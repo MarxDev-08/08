@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import heroRight from "../assets/AIIntegration.jpg";
+import heroRight from "../assets/BG_Design.png";
 
 const Home = () => {
   return (
@@ -38,7 +38,6 @@ const Home = () => {
         {/* Right image */}
         <div className="hero-right">
           <img src={heroRight} alt="" />
-          {/* gradient overlay to fade into white on the left */}
           <div className="hero-gradient" aria-hidden="true"></div>
         </div>
       </div>
