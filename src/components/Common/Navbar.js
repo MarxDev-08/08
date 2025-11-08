@@ -18,8 +18,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link to="/about">About</Link>
-          <Link to="/events">Events</Link>
-          <Link to="/careers">Careers</Link>
+          {/* <Link to="/events">Events</Link> */}
           <Link to="/blog">Blog</Link>
         </nav>
 

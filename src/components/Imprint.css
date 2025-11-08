@@ -1,0 +1,123 @@
+.imprint-bg {
+  background: #F0F0F2;
+  padding: 24px;
+}
+
+.imprint-card {
+  background: #ffffff;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-radius: 48px;
+  padding: 36px 28px;
+  box-shadow: 0 1px 0 rgba(16,24,40,0.02);
+}
+
+.imprint-header h1 {
+  margin: 0 0 4px;
+  font-size: clamp(28px, 4.2vw, 44px);
+  font-weight: 800;
+  color: #0b0b0b;
+}
+
+.imprint-kicker {
+  margin: 0 0 22px;
+  color: #4b5563;
+}
+
+/* Grid: Address + Contact */
+.imprint-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 24px 36px;
+  margin-top: 12px;
+}
+
+.imprint-block {
+  background: #f8fafc;
+  border-radius: 20px;
+  padding: 18px 18px 16px;
+}
+
+.imprint-block h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #0E5B73;
+  margin: 0 0 10px;
+}
+
+.imprint-address {
+  font-style: normal;
+  color: #111827;
+  line-height: 1.6;
+}
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: #0E5B73;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.map-link:hover { text-decoration: underline; }
+
+/* Contact list */
+.imprint-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.imprint-list li {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.imprint-list a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.imprint-list a:hover { text-decoration: underline; }
+
+/* Sections */
+.imprint-section {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.imprint-section h2 {
+  font-size: 1.1rem;
+  color: #0E5B73;
+  margin: 0 0 10px;
+}
+
+.imprint-section p {
+  color: #374151;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Disclaimer bullets */
+.bullet-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #374151;
+  line-height: 1.7;
+}
+.bullet-list li { margin-bottom: 8px; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .imprint-card { padding: 28px 20px; }
+  .imprint-grid { grid-template-columns: 1fr; }
+}

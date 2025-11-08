@@ -7,6 +7,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Common/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Imprint from "./components/Imprint";
+import Blogs from "./components/Blogs";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/imprint" element={<Imprint />} />
+          <Route path="/blog" element={<Blogs />} />
         </Routes>
         <Footer />
       </Router>
