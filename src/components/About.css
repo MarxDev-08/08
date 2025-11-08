@@ -1,0 +1,177 @@
+.about-bg {
+  background: #F0F0F2;
+  padding: 24px;
+}
+/* Mission Section */
+.about-mission-page {
+  background: #000000;
+  padding: 60px 24px 0px;
+  max-width: 1280px;
+  margin: 20px auto;
+  color: #ffffff;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.about-mission {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.about-mission h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.about-mission p {
+  color: #ffffff;
+  line-height: 1.8;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.about-page {
+background:
+  linear-gradient(to top, rgba(14,91,115,0.4), transparent 20%),
+  linear-gradient(to bottom, rgba(14,91,115,0.4), transparent 20%),
+  linear-gradient(to left, rgba(14,91,115,0.4), transparent 20%),
+  linear-gradient(to right, rgba(14,91,115,0.4), transparent 20%);
+  padding: 60px 24px 80px;
+  max-width: 1280px;
+  margin: 35px auto;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.about-page h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #0E5B73;
+  font-weight: 600;
+}
+
+.alt-layout {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.values-timeline {
+  border-left: 3px solid #0E5B73;
+  margin-top: 40px;
+  padding-left: 24px;
+}
+
+.value-item {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.value-item .dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0E5B73;
+  position: absolute;
+  left: -33px;
+  top: 5px;
+}
+
+.value-item h3 {
+  color: #0E5B73;
+  margin-bottom: 6px;
+}
+
+.value-item p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.about-team-page {
+  background: #ffffff;
+  padding: 60px 24px 80px;
+  max-width: 1280px;
+  margin: 5px auto;
+  background: #ffffff;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+/* Team Section */
+.about-team {
+  text-align: center;
+}
+
+.about-team h2 {
+  font-size: 3rem;
+  color: #0E5B73;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  max-width: 1210px;
+  margin: 0 auto 0;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 18px;
+  padding: 10px;
+  width: 100%;
+  max-width: 260px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 14px;
+  height: 240px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
+
+.team-member:hover img {
+  filter: grayscale(0%);
+}
+
+.team-member h4 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #0b0b0b;
+}
+
+.team-member p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.team-socials a {
+  color: #0E5B73; /* MarxDev brand blue */
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.team-socials a:hover {
+  color: #0a465c;
+  transform: scale(1.1);
+}

@@ -1,50 +1,55 @@
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
+import React from "react";
+import "./Home.css";
+import heroRight from "../assets/BG_Design.png";
+import About from "./About";
+import Contact from "./Contact";
 
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-import { Video } from './Video'
-import { Page1 } from './Page1'
-
-import Page2 from './Page2';
-gsap.registerPlugin(ScrollTrigger); 
-
-
-export default function Home() {
-
-
-    useEffect(() => {
-      gsap.to("#main", {
-        backgroundColor: "black",
-    
-       
-        scrollTrigger:{
-          trigger:"#main",
-          scroller:"body",
-       
-         start:"top -40%",
-         end:"top -80%",
-         scrub:2
-        }
-      });
-
-    
- 
-
-  }, []);
-  
-
+const Home = () => {
   return (
-   
-       <div >
-      <Video/>
-      <div id='main'>
-        <Page1/>
-        <Page2/>
+    <div className="home-bg">
+      <section>
+        <div className="hero-card">
+          {/* Left content */}
+          <div className="hero-left">
+            <h1 className="hero-title">
+              We craft intelligent
+              <br />
+              digital experiences
+            </h1>
 
-      </div>
+            <p className="hero-sub">
+              {/* We build intelligent digital solutions that simplify complex system
+            design and collaboration.  */}
+              Our flagship product, the{" "}
+              <strong> Webcomposition Architecture Model (WAM)</strong> empowers
+              teams to visually model, describe, and refine system architectures
+              through an intuitive AI-assisted platform
+            </p>
 
+            <a
+              href="/contact"
+              className="cta-yellow"
+              aria-label="Book a free consultation"
+            >
+              <span>Book a free consultation</span>
+              <span className="cta-icon" aria-hidden>
+                →
+              </span>
+            </a>
+          </div>
+
+          {/* Right image */}
+          <div className="hero-right">
+            <img src={heroRight} alt="" />
+            <div className="hero-gradient" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <About />
+      <Contact />
     </div>
-  )
-}
+  );
+};
 
+export default Home;
