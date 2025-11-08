@@ -100,10 +100,117 @@
   text-decoration: none;
   color: #ffffff;
 }
+/* existing styles ... */
 
-/* Responsive*/
-@media (max-width: 900px) {
-  .nav-center { display: none; }
-  .nav-shell { height: 64px; padding: 0 18px; }
-  .page-bg { padding: 10px; }
+.nav-center a.navlink {
+  text-decoration: none;
+  color: #0b0b0b;
+  font-weight: 500;
+  line-height: 1;
+  padding: 6px 0;
+  transition: color .15s ease;
 }
+.nav-center a.navlink:hover { color: #4b5563; }
+.nav-center a.navlink.active { border-bottom: 2px solid #0b0b0b; }
+
+/* Make Link act as button */
+.cta {
+  display: inline-block;
+  background: #0E5B73;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity .15s ease;
+}
+.cta:hover { opacity: .9; }
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  color: #0b0b0b;
+}
+
+/* Drawer styles */
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 14px 6px;
+  border-bottom: 1px solid #eee;
+}
+.drawer-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.drawer-brand img {
+  width: 36px; height: 36px; object-fit: contain;
+}
+
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 12px 18px;
+}
+.drawer-nav a.navlink {
+  padding: 14px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0b0b0b;
+  font-weight: 600;
+  margin: 4px 2px;
+}
+.drawer-nav a.navlink.active {
+  background: #F3F4F6;
+}
+.drawer-cta {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #0E5B73;
+  color: #fff;
+  padding: 12px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.98rem;
+}
+
+/* Base: hide hamburger on desktop */
+.hamburger {
+  display: none !important;
+}
+
+/* Show hamburger and hide desktop nav/cta at ≤880px */
+@media (max-width: 880px) {
+  .nav-center { display: none !important; }
+  .cta       { display: none !important; }
+  .hamburger { display: inline-flex !important; }
+  .nav-shell { height: 64px; padding: 0 14px; }
+  .page-bg   { padding: 10px; }
+}
+
+/* Optional: ensure desktop shows links again above 880px */
+@media (min-width: 881px) {
+  .nav-center { display: flex !important; }
+  .cta        { display: inline-block !important; }
+}
+
+@media (max-width: 880px) {
+  .nav-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-brand {
+    font-size: 22px;
+  }
+}
+
+
+
