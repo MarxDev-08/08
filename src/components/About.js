@@ -10,7 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const About = () => {
   return (
-    <div>
+    <div className="about-bg">
       <section className="about-mission-page">
         {/* Mission Section */}
         <div className="about-mission">

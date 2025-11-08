@@ -25,7 +25,9 @@ const Navbar = () => {
 
         {/* Right: Lang + CTA */}
         <div className="nav-right">
-          <button className="cta">Talk to us</button>
+          <button className="cta">
+            <Link to="/contact">Talk to us</Link>
+          </button>
         </div>
       </header>
     </div>

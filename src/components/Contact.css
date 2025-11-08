@@ -1,0 +1,173 @@
+/* Page background */
+.contact-bg {
+  background: #F0F0F2;
+  padding: 24px;
+}
+
+/* --- CTA pill card --- */
+.contact-cta {
+  background: #fff;
+  border-radius: 36px;
+  padding: 36px 32px;
+  max-width: 1280px;
+  margin: 0 auto 28px;
+}
+
+.contact-cta h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  margin: 0 0 12px;
+  color: #121212;
+}
+
+.contact-cta p {
+  color: #4b5563;
+  margin: 0 0 24px;
+  font-size: 1.05rem;
+}
+
+.cta-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  padding: 16px 22px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform .08s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.cta-pill--hollow {
+  background: #ffd400;
+  color: #111111
+}
+.contact-person {
+  margin-top: 18px;
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-person h4 {
+  margin-bottom: 4px;
+  color: #0E5B73;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* --- Form card --- */
+.contact-form-card {
+  background: #fff;
+  border-radius: 36px;
+  padding: 36px 32px 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.contact-form-card h3 {
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.form-lead {
+  color: #4b5563;
+  margin: 0 0 28px;
+}
+.form-lead a { color: #0E5B73; text-decoration: underline; }
+
+/* Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 28px 40px;
+}
+
+.field { display: flex; flex-direction: column; }
+
+.field label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.field .muted { color: #9aa3af; font-weight: 500; }
+
+.field input,
+.field select,
+.field textarea {
+  border: none;
+  border-bottom: 2px solid #d1d5db;
+  padding: 12px 2px;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+  transition: border-color .15s ease;
+}
+
+.field textarea { resize: vertical; }
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-bottom-color: #0E5B73;
+}
+
+.span-2 { grid-column: span 2; }
+
+.error {
+  color: #b42318;
+  margin-top: 6px;
+  font-size: .9rem;
+}
+
+/* Checkboxes */
+.checks { margin-top: 20px; display: grid; gap: 14px; }
+
+.check {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 12px;
+  align-items: flex-start;
+  color: #374151;
+}
+
+.check input {
+  width: 18px;
+  height: 18px;
+  accent-color: #0E5B73;
+  margin-top: 3px;
+}
+
+/* Send button */
+.send-btn {
+  margin-top: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: #ffd400;
+  color: #0b0b0b;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  transition: transform .08s ease, box-shadow .2s ease;
+}
+
+.send-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0,0,0,.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .span-2 { grid-column: span 1; }
+}

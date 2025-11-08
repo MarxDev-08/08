@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import heroRight from "../assets/BG_Design.png";
 import About from "./About";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -46,6 +47,7 @@ const Home = () => {
       </section>
 
       <About />
+      <Contact />
     </div>
   );
 };
