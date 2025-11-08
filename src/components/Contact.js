@@ -3,6 +3,12 @@ import "./Contact.css";
 import PhoneIphoneRoundedIcon from "@mui/icons-material/PhoneIphoneRounded";
 import ArrowRightAltRoundedIcon from "@mui/icons-material/ArrowRightAltRounded";
 import emailjs from "@emailjs/browser";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 const initialState = {
   name: "",
@@ -17,6 +23,7 @@ const initialState = {
 const Contact = () => {
   const [form, setForm] = useState(initialState);
   const [errors, setErrors] = useState({});
+  const [alert, setAlert] = useState({ open: false, type: "success", msg: "" });
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -56,12 +63,20 @@ const Contact = () => {
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       );
 
-      alert("Thanks! Your message was sent.");
+      setAlert({
+        open: true,
+        type: "success",
+        msg: "Thanks! Your message was sent successfully.",
+      });
       setForm(initialState);
       setErrors({});
     } catch (err) {
       console.error(err);
-      alert("Sorry, something went wrong sending your message.");
+      setAlert({
+        open: true,
+        type: "error",
+        msg: "Sorry, something went wrong. Please try again later.",
+      });
     }
   };
 
@@ -212,6 +227,21 @@ const Contact = () => {
           </button>
         </form>
       </section>
+      {/* Snackbar Alert */}
+      <Snackbar
+        open={alert.open}
+        autoHideDuration={4000}
+        onClose={() => setAlert({ ...alert, open: false })}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert
+          onClose={() => setAlert({ ...alert, open: false })}
+          severity={alert.type}
+          sx={{ width: "100%" }}
+        >
+          {alert.msg}
+        </Alert>
+      </Snackbar>
     </div>
   );
 };
