@@ -7,7 +7,7 @@
   background: #000000;
   padding: 60px 24px 0px;
   max-width: 1280px;
-  margin: 35px auto;
+  margin: 20px auto;
   color: #ffffff;
   border-radius: 48px;
   overflow: hidden;
@@ -93,7 +93,7 @@ background:
   background: #ffffff;
   padding: 60px 24px 80px;
   max-width: 1280px;
-  margin: 35px auto;
+  margin: 5px auto;
   background: #ffffff;
   border-radius: 48px;
   overflow: hidden;
@@ -117,7 +117,7 @@ background:
   gap: 30px;
   justify-items: center;
   max-width: 1210px;
-  margin: 0 auto;
+  margin: 0 auto 0;
 }
 
 .team-member {

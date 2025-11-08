@@ -27,7 +27,7 @@ const Home = () => {
             </p>
 
             <a
-              href="#contact"
+              href="/contact"
               className="cta-yellow"
               aria-label="Book a free consultation"
             >

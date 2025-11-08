@@ -1,0 +1,106 @@
+.footer-bg {
+  background: #F0F0F2;
+  padding: 24px;
+}
+
+.footer {
+  background: #0E5B73;
+  color: #ffffff;
+  padding: 60px 24px 10px;
+  max-width: 1280px;
+  margin: 5px auto;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-items: center;  /* centers all columns */
+  align-items: start;
+  text-align: center;     /* optional, aligns text */
+}
+
+
+.footer-brand h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+}
+
+.footer-links h4,
+.footer-socials h4 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+/* Center the socials block within its grid column on desktop */
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Center the icon row + control size */
+.footer-socials .social-icons {
+  display: flex;
+  gap: 25px;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff !important;
+}
+
+/* Make MUI icons bigger */
+.footer-socials .social-icons a svg {
+  font-size: 2.4rem; 
+}
+
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 50px;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer-inner {
+    text-align: center;
+  }
+}
