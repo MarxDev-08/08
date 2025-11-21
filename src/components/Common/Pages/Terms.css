@@ -1,0 +1,41 @@
+/* Page background */
+.terms-bg {
+  background: #F0F0F2;
+  padding: 24px;
+}
+
+/* Card styling */
+.terms-card {
+  background: #fff;
+  border-radius: 36px;
+  padding: 36px 32px 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.terms-card h3 {
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: #121212;
+}
+
+.terms-lead {
+  color: #4b5563;
+  margin: 0 0 28px;
+  font-size: 1.05rem;
+}
+
+/* Terms content */
+.terms-content h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #0E5B73;
+}
+
+.terms-content p {
+  margin-top: 8px;
+  line-height: 1.6;
+  color: #374151;
+}

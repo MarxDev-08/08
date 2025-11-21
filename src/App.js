@@ -9,6 +9,7 @@ import Footer from "./components/Common/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Imprint from "./components/Imprint";
 import Blogs from "./components/Blogs";
+import Terms from "./components/Common/Pages/Terms";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/imprint" element={<Imprint />} />
           <Route path="/blog" element={<Blogs />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
         <Footer />
       </Router>

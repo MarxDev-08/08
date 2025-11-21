@@ -36,6 +36,9 @@ const Navbar = () => {
           <NavLink to="/blog" className={linkClass}>
             Blog
           </NavLink>
+          {/* <NavLink to="/terms" className={linkClass}>
+            Terms
+          </NavLink> */}
         </nav>
 
         {/* Right: CTA + Hamburger */}
@@ -90,6 +93,9 @@ const Navbar = () => {
           <NavLink to="/blog" className={linkClass}>
             Blog
           </NavLink>
+          {/* <NavLink to="/terms" className={linkClass}>
+            Terms
+          </NavLink> */}
 
           <Link to="/contact" className="drawer-cta">
             Talk to us <ArrowRightAltRoundedIcon fontSize="inherit" />
